@@ -39,6 +39,8 @@ class NoDocs2 extends BaseClass {}
 class NoDocs3 extends BaseClass {}
 ```
 
+![](./img/NoDocs1.png)
+
 However, adding a made-up tag afterwards restores the class documentation:
 
 ```ts
@@ -59,6 +61,8 @@ class WithDocs1 {}
  */
 class WithDocs2 extends BaseClass {}
 ```
+
+![](./img/WithDocs1.png)
 
 I have only tested `@class` and `@extends` tags for this behavior, but it's
 possible that this also affects other tags (and nodes other than classes).
