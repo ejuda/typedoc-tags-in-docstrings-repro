@@ -13,7 +13,7 @@ present in them.
 
 Some tags (`@class`, `@extends`) prevent class documentation from showing.
 
-For instance the documentation for these two classes will not render:
+For instance the documentation for these three classes will not render:
 
 ```ts
 /**
