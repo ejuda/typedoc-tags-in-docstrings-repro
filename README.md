@@ -17,47 +17,47 @@ For instance the documentation for these two classes will not render:
 
 ```ts
 /**
- * @class AnotherClass
+ * @class NoDocs1
  *
  * This is another class.
  */
-class Bravo {}
+class NoDocs1 {}
 
 /**
- * @extends Alpha
+ * @extends BaseClass
  *
  * This is an other class.
  */
-class Charlie extends Alpha {}
+class NoDocs2 extends BaseClass {}
 
 /**
- * @class D
- * @extends Alpha
+ * @class NoDocs3
+ * @extends BaseClass
  *
  * Some docs.
  */
-class Delta extends Alpha {}
+class NoDocs3 extends BaseClass {}
 ```
 
 However, adding a made-up tag afterwards restores the class documentation:
 
 ```ts
 /**
- * @class E
+ * @class WithDocs1
  * @madeupTag
  *
  * This is a different class.
  */
-class Echo {}
+class WithDocs1 {}
 
 /**
- * @class F
- * @extends Alpha
+ * @class WithDocs2
+ * @extends BaseClass
  * @anotherMadeupTag
  *
  * This is a different class.
  */
-class Foxtrot extends Alpha {}
+class WithDocs2 extends BaseClass {}
 ```
 
 I have only tested `@class` and `@extends` tags for this behavior, but it's
