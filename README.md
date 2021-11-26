@@ -77,7 +77,7 @@ possible that this also affects other tags (and nodes other than classes).
 
 ## Environment
 
--   Typedoc version: 0.22.9
--   TypeScript version: 4.4.4
+-   Typedoc version: 0.22.10
+-   TypeScript version: 4.5.2
 -   Node.js version: 14.15.4
 -   OS: Windows 10
